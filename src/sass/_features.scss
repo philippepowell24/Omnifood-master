@@ -1,0 +1,40 @@
+.features {
+  grid-column: center-start / center-end;
+  justify-items: center;
+  justify-content: center;
+
+  &__heading {
+   text-align: center;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    margin-bottom: 3rem;
+
+  }
+
+  &__item {
+    padding: 3rem 0;
+    text-align: center;
+
+    &--text{
+      font-size: 1.8rem;
+      text-align: justify;
+      
+
+    }
+  }
+
+
+    &__icon--big {
+      font-size: 6rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+}

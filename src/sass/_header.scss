@@ -1,0 +1,152 @@
+.header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero_pic.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero_pic.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+
+  
+  grid-column: full-start / full-end;
+  justify-content: center;
+
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: min-content 1fr 1fr;
+  grid-gap: 3rem;
+  
+
+  
+  
+
+
+  &__logo {
+    align-self: center;
+    margin-top: 2rem;
+    height: 10rem;
+    width: auto;
+
+  }
+
+  &__logo-black {
+
+  }
+
+
+}
+
+.nav {
+  grid-column: 2 / 3;
+  align-self: center;
+  
+  &__list {
+   display: flex;
+   list-style: none;
+  
+
+
+   
+
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      padding: 2rem 0;
+      margin: 2rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom 0.2s;
+      transition: border-bottom 0.2s;
+    }
+
+    &:hover,
+    &:active {
+    border-bottom: .2rem solid $color-primary;
+}
+
+  }
+
+  &__item {
+    
+
+  }
+
+  &__mobile-icon {
+
+  }
+
+
+}
+
+.cta {
+  grid-column: 1 / 2;
+}
+
+.btn {
+
+  &:link,
+  &:visited,
+  input[type=submit] {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20rem;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+
+  &:hover,
+  &:active,
+  input[type=submit]:hover,
+  input[type=submit]:active {
+    background-color: $color-secondary;
+  }
+
+  &__full {
+
+
+    &:link,
+    &:visited,
+    input[type=submit] {
+    background-color: $color-primary;
+    border: .1rem solid $color-primary;
+    color: $color-white;
+    margin-right: 1.5rem;
+    }
+
+
+    &:hover,
+    &:active {
+    border: .1rem solid $color-secondary;
+    }
+    
+
+  }
+
+  &__ghost {
+
+    margin-left: 1rem;
+
+    &:link,
+    &:visited,
+    input[type=submit] {
+      border: .1rem solid $color-primary;
+      color: $color-primary;
+      margin-right: 1.5rem;
+    }
+
+    &:hover,
+    &:active {
+    border: .1rem solid $color-secondary;
+    color: $color-white;
+    }
+    
+  }
+}

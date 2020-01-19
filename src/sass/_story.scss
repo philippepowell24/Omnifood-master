@@ -1,0 +1,46 @@
+.story {
+  grid-column: full-start / full-end;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: $color-white;
+  background-attachment: fixed;
+  display: grid;
+  justify-content: center;
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    grid-gap: 4rem;
+    //padding: 3rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      
+
+      &:before {
+        content: "\201C";
+        font-size: 10rem;
+        margin-top: -3rem;
+        margin-bottom: -6rem;
+      }
+
+    }
+
+    &--citation {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 4.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
